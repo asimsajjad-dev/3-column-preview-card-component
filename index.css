@@ -1,0 +1,141 @@
+:root{
+  /*-----Primary color----*/
+  --clr-dorange:31, 77%, 52%;
+  --clr-dcyan:184, 100%, 22%;
+  --clr-vdcyan:179, 100%, 13%;
+  /*-----Neutral color----*/
+  --clr-twhite:0, 0%, 100%, 0.75;
+  --clr-gray:0, 0%, 95%;
+    /*-----typography----*/
+    -ff-lexend:'Lexend Deca', sans-serif;
+    --ff-bigs:'Big Shoulders Display', cursive;
+    --fw-700:700;
+  
+}
+body{
+  font-size: 0.938rem;
+  font-weight: 400;
+  background-color: hsl(var(--clr-gray));
+  margin: 0 auto;
+  
+}
+img{
+  display: block;
+  width: 100%;
+  
+}
+#preview-card{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.container div{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+span{
+  display: block;
+  text-align: center;
+  border-radius: 1rem;
+  padding:0.5rem;
+  margin-top: 5rem;
+  margin-right: 5rem;
+}
+  /*-----utility classes----*/
+.orange-bg{
+  background-color: hsl(var(--clr-dorange));
+}
+.dcyan-bg{
+  background-color: hsl(var(--clr-dcyan));
+}
+.vdcyan-bg{
+  background-color: hsl(var(--clr-vdcyan));
+}
+.twhite-bg{
+background-color: hsl(var(--clr-gray));
+}
+.orange-txt{
+  color: hsl(var(--clr-dorange))
+}
+.dcyan-txt{
+  color: hsl(var(--clr-dcyan));
+}
+.vdcyan-txt{
+  color: hsl(var(--clr-vdcyan));
+}
+.twhite-txt{
+  color: hsl(var(--clr-twhite));
+}
+.gray-txt{
+  color: hsl(var(--clr-gray));
+}
+.ff-big{
+  font-family: var(--ff-bigs);
+}
+.fw-700{
+  font-weight: var(--fw-700);
+}
+.attribution { 
+  display: none;
+  font-size: 11px; text-align: center; 
+  
+}
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+  
+}
+.cattribution { 
+  font-size: 11px; text-align: center; 
+  
+}
+.cattribution a {
+  color: hsl(228, 45%, 44%); 
+  
+}
+
+
+@media (max-width:35rem){
+  #preview-card{
+    margin: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  .container {
+  flex-direction:row;
+  flex-wrap: wrap; 
+  padding: 0;
+}
+.container div{
+  display:block;
+  padding:2rem;
+}
+span{
+  margin-right: 10rem;
+}
+.attribution { 
+  font-size: 11px; text-align: center; 
+  
+}
+
+.attribution {
+  display: inline-block;
+  margin:0 2rem 0 2rem;
+}
+.cattribution{
+  display: none;
+}
+
+}
+
+
+
+
